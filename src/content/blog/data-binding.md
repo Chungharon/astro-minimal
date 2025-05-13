@@ -35,7 +35,7 @@ Your feedback means the world — and it helps other guests know what to expect!
 
 ---
 
-## 🙏 Thank You so Much
+## 🙏 Thank You
 
 Hosting you has been a pleasure.  
 I truly appreciate your visit and hope to welcome you again soon.
