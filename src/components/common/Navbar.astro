@@ -19,34 +19,12 @@ import { localizePath } from "astro-i18next";
       aria-expanded="false"
       data-target="navbar-id"
     >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+      <span aria-hidden="false"></span>
+      <span aria-hidden="false"></span>
+      <span aria-hidden="false"></span>
     </a>
   </div>
 
-  <div id="navbar-id" class="navbar-menu mt-4 mb-2">
-    <div class="navbar-end mr-4">
-      {
-        menuOptions.map((option) => {
-          return (
-            <a href={localizePath(option.url)} class="navbar-item f-600 tertiary-color ">
-              {option.label}
-            </a>
-          );
-        })
-      }
-      <div class="mt-4">
-        <SearchBoxOrama client:visible />
-
-        <Icon
-          class="ml-4 tertiary-color baseline-dark-mode pointer"
-          size={34}
-          name="gg:dark-mode"
-        />
-      </div>
-    </div>
-  </div>
 </nav>
 
 <script>

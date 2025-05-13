@@ -1,76 +1,54 @@
 ---
-title: "Conditional rendering: v-if vs v-show 🫴"
-description: In some cases it happens that you want to render certain portions of software according to certain conditions.
-date: 2023-09-19 
+title: "HuJambo 🏡"
+description: All you need to know for a comfortable stay — Wi-Fi access, house details, and a little about your host.
+date: 2025-05-13
 ---
 
 ## Overview
 
-In some cases it happens that you want to render certain portions of software according to certain conditions.
-In this article will explains what is Conditional rendering and how Vue handle it.
-
-
-## What is Conditional rendering?
-
-Conditional rendering is the rendering of a portion of software based on a certain condition that can changes over time.
-Not only does Vue have this feature, but also other frontend frameworks like React and Angular. The difference is the way it is managed.
-In Vue there are two ways: `v-if` and `v-show`, two native Directives of the framework.
+Welcome to your home away from home! 👋  
+A quick overview of everything you'll need: from how to connect to the Wi-Fi, a few helpful house details, and a little about your host (me 😊).
 
 ---
 
-## How works v-if?
+## 📶 Wi-Fi Connection
 
-The `v-if` directive is used simply to conditionally render a block. The block will be rendered only if the directive expression returns a true value.
+Since you're here, i believe that you're connected to AirbnbHome if NOT, kindly use the information provided below to logIn.
 
-```html
-<h1 v-if="isTrue">Follow me on GitHub: DomeT99</h1>
-```
+We’ve got fast and reliable internet for work, streaming, and everything in between.
 
-`v-if` takes simply as condition a JavaScript expression.
-It's possible indicate an "else block" with another Directive: `v-else`.
+- **Network Name**: `AirbnbHome`
+- **Password**: `Welcome123`
 
-```html
-<h1 v-if="isTrue">Follow me on GitHub: DomeT99</h1>
-<h1 v-else>Or dev.to: Domenico Tenace</h1>
-```
-
-If `isTrue` condition is false, `v-else` render the second title.
-Exists another Directive that indicate "else if block" and is called `v-else-if`.
-
-```html
-<div v-if="social === 'GitHub'">Follow me on GitHub: DomeT99</div>
-<div v-else-if="social === 'dev.to'">Follow me on dev.to: Domenico Tenace</div>
-<div v-else>Visit my Linktree for more links: linktree.com/domenicotenace</div>
-```
-
-`v-if` also support the `<template>` element for wrapper more HTML tags to render.
-
-## How works v-show?
-
-Another way to use conditional rendering is another directive called "v-show" and it's not that different from `v-if` on the surface.
-
-```html
-<h1 v-show="isTrue">Follow me on GitHub: DomeT99</h1>
-```
-
-Whether you use `v-if` or `v-show` the final result in this case will be the same.
-So what's the difference between the two?
-The key difference is that an element with `v-show` will always be rendered and remain in the DOM; `v-show` only toggles the display CSS property of the element.
-
-`v-show` doesn't support the `template` element, nor does it work with `v-else`.
+If you run into any issues, just message me!
 
 ---
 
-## v-if vs v-show
+## 🏠 About the Macdee Apartment
 
-`v-if` is "real" conditional rendering because it ensures that event listeners and child components inside the conditional block are properly destroyed and re-created.
-It's lazy, infact if the condition is false on initial render, it will not do anything the conditional block won't be rendered until the condition becomes true for the first time.
+Here are a few key things about Macdee:
 
-`v-show` is much simpler, the element is always rendered regardless of initial condition, with CSS-based toggling.
+- **Personal Contact**: +254 7220000
+- **Emergency Contact Police**: +254 7220000  
+- **Hospital Info**: +254 7220000
+- **Apartment Agent**: +254 7220000
 
-In general, `v-if` has higher toggle costs while `v-show` has higher initial rendering costs. So it is preferable to use `v-show` if you need to activate something very often and `v-if` if the condition is unlikely to change at run time.
+I got into hosting because I love combining hospitality with smart tech — from automated check-ins to little digital touches like this card.  
+When I’m not coding or working on side projects, I write technical articles to share knowledge with other developers.
 
-## Conclusion
+---
 
-These are the ways in which Vue handles Conditional Rendering, which can be expensive when rendering with `v-show` and more expensive when toggle with `v-if`.
-They must be used in the right contexts.
+## 👤 About Your Host
+
+Hi! I’m **Rispa Wachuka**, your host.  
+I'm a **software developer** deeply passionate about technology, the IT world, and creating experiences that are both smart and personal.
+
+I got into hosting because I love combining hospitality with smart tech — from automated check-ins to little digital touches like this card.  
+When I’m not coding or working on side projects, I write technical articles to share knowledge with other developers.
+
+Hosting gives me a chance to meet people from around the world while offering them a cozy, functional space to relax or work.
+
+---
+
+Thanks again for choosing to stay here. If you need anything at all, feel free to reach out anytime!
+**– David Kamau**

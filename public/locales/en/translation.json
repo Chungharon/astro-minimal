@@ -6,26 +6,26 @@
     "notFoundDescription": "This page doesn't exist 😵"
   },
   "home": {
-    "pageTitle": "Home",
-    "pageDescription": "Software developer passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge.",
-    "title": "Hello I'm John! 👋",
-    "subtitle": "Software developer passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge.",
-    "blogBtn": "Read my blog",
-    "openSourceBtn": "Open Source"
+  "pageTitle": "Welcome",
+  "pageDescription": "Friendly host and software developer passionate about tech and travel. I write technical articles and provide smart tools to enhance your stay.",
+  "title": "Welcome to Your Stay! 👋",
+  "subtitle": "You've just scanned our QR code — that means you're officially checked in 🎉 If there's anything you need during your stay, don’t hesitate to reach out. From Wi-Fi info to local recommendations to smart tech help, I'm here for you.",
+  "blogBtn": "View House Rules",
+  "openSourceBtn": "Explore Tech Tools"
   },
   "blog": {
-    "pageTitle": "Blog",
-    "pageDescription": "This is blog section where there's a list of posts.",
-    "title": "Blog",
-    "subtitle": "This is blog section where there's a list of posts."
-  },
+  "pageTitle": "Guest Info",
+  "pageDescription": "Helpful information for your stay — including house rules, local recommendations, and how-to guides.",
+  "title": "Guest Information",
+  "subtitle": "Here you'll find everything from house rules to local tips to make your stay comfortable and stress-free."
+   },
   "post": {
-    "backBtn": "Return to blog"
+  "backBtn": "Back to House Rules"
   },
   "opensource": {
-    "pageTitle": "Open Source",
-    "pageDescription": "This is the open source section where there is a list of projects.",
-    "title": "Open Source",
-    "subtitle": "This is the open source section where there is a list of projects."
-  }
+  "pageTitle": "Tech Projects",
+  "pageDescription": "A curated list of open-source and personal tech projects I've built or contributed to as a software developer.",
+  "title": "Explore My Projects",
+  "subtitle": "From automation tools to smart home integrations, here are some of the tech projects I've worked on and shared with the world."
+   }
 }

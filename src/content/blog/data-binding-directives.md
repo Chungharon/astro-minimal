@@ -1,87 +1,58 @@
 ---
-title: "Data binding: Directives 🫰"
-description: Vue provides a special attribute called "Directive" the reactive changes to the DOM.
-date: 2023-09-15 
+title: "House Rules & Appliances 🛋️"
+description: Everything you need to know about using the home responsibly — from the house rules to electronics and appliances available.
+date: 2025-05-13
 ---
 
 ## Overview
 
-Vue provides a special attribute called "Directive" the reactive changes to the DOM.
-In this article will explains what is a Directive and how to use it.
-
-
-## What is a Directive?
-
-As mentioned in the paragraph above, Directive is a special attribute for apply the reactive changes to the DOM.
-Is recognizable because is preceded by the character `v-` and Vue provides some Directives like `v-if` or `v-for`.
-It's possible create custom Directives, but this an advanced concept.
+Thanks for respecting the space 🙏  
+This chapter contains important house rules and helpful info about the appliances and electronics you can use during your stay.
 
 ---
 
-## Arguments
+## 📝 House Rules
 
-```js
-<a v-bind:href="url">Follow me on GitHub</a>
-```
+- **No Smoking or Vaping** 🚭 — inside the home or near open windows uness agreed in advance.
+- **No Pets** unless agreed in advance.
+- **Quiet Hours**: 10:00 PM to 8:00 AM — please be mindful of neighbors.
+- **Registered Guests Only** — no outside visitors without prior approval.
+- **a simple clean won't bite** — especially in shared spaces like the kitchen and bathroom.
+- **Trash & Recycling**: Bins are under the sink. Pickup is every Thursday morning.
 
-In the example above, the `v-bind` directive takes `href` as an argument and is associated with a JavaScript value, in this case a `url` variable.
-The structure is:
-
-- `v-bind`, the name of Directive
-- `:href`, the name of argument preceded from semicolon
-- `url`, the value of binding
-
-When the `url` changes, thanks to `v-bind`, Vue will apply the relative changes to the DOM.
-
-## Dynamic Arguments
-
-It also possible use the power of JavaScript and use a dynamic expression as argument in this way:
-
-```html
-<a v-bind:[dynamicArgument]="url">Click here!</a>
-```
-
-the argument is wrapped by square brackets and it's a JavaScript expression.
-Dynamic arguments are expected to evaluate to a string, with the exception of null. The special value null can be used to explicitly remove the binding.
-
-You have to keep in mind that certain characters such as spaces and quotes, are invalid inside HTML attribute names.
-
-```html
-<a v-bind:["link" + dynamicArgument]="url">Click here!</a>
-```
-
-This example above **is invalid**.
-
-## Modifiers
-
-There are some Directives, for example `v-on`, that have another attribute: **Modifier**.
-They are are special postfixes denoted by a dot which indicate that a directive should be bound in some special way.
-
-For example, it's possible to use `.prevent` on `v-on:submit`, and it will indicate to call `event.preventDefault()` on the triggered event.
-
-```html
-<form v-on:submit.prevent="onSubmit"></form>
-```
-
-## Shorthand
-
-There are another to declare `v-bind` and `v-on`, shorthand way:
-
-- `v-bind`: this directive is deleted completely in this way:
-
-```html
-<a :href="url">Follow me on GitHub</a>
-```
-
-- `v-on`: this directive is replaced by `@` in this way:
-
-```html
-<form @submit.prevent="onSubmit"></form>
-```
+Treat this place like your own — it’s deeply appreciated.
 
 ---
 
-## Conclusion
+## 🔌 Appliances & Electronics
 
-Directives are a very important feature of Vue that allow you to manipulate data dynamically.
-For this reason it is essential to know in depth.
+### Kitchen
+
+- **Microwave** – Quick heat-ups only (avoid metal or foil)
+- **blender & Toester** – Stored in the lower cabinet
+- **Electric Kettle** – Auto-shuts off when done
+- **Fridge/Freezer** – Feel free to store your groceries
+- **Stove & Oven** – Please turn off burners after use
+
+### Living Room
+
+- **Smart TV** – YouTube, Netflix, and more (no login needed)
+- **Wi-Fi** – Already shared in Card One
+
+### Bedroom
+
+- **Charging Extension** – USB + USB-C available on the nightstand
+- **Reading Light** – Tap to dim or turn off
+
+### Bathroom
+
+- **Hairdryer** – Located under the sink
+
+If anything isn't working or you're unsure how to use something, feel free to message me anytime!
+
+---
+
+Thanks for taking good care of the space!  
+Your comfort and care help make this home feel warm and welcoming for everyone.
+
+**– [Your Name]**
