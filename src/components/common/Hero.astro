@@ -9,6 +9,7 @@ export interface Props {
   subtitleSize?: TextSize;
   subtitleSizeMobile?: TextSize;
   size?: Size;
+  profileImage?: string; // New
 }
 
 const {
@@ -19,11 +20,23 @@ const {
   subtitleSize = "is-size-5",
   subtitleSizeMobile = "is-size-6",
   size = "is-small",
+  profileImage, // Destructure it here
 } = Astro.props;
+
 ---
 
 <section class:list={["hero", size]}>
   <div class="hero-body is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-centered">
+    
+    {profileImage && (
+      <figure class="image is-128x128 mb-4">
+        <img class="is-rounded" src={profileImage} alt="Profile picture" />
+      </figure>
+    )}
+    <figure class="image is-128x128 mb-4">
+        <img class="is-rounded" src={profileImage} alt="Profile picture" />
+      </figure>
+
     <h1
       class:list={["title", titleSize, titleSizeMobile + "-mobile"]}
       class="title"
