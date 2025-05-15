@@ -24,14 +24,14 @@ const {
 } = Astro.props;
 ---
 
-<section class:list={["hero", "is-fullheight", size]}>
+<section class:list={["hero", size]}>
   <div class="hero-body is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-centered">
     
-    {profileImage && (
+    <!-- {profileImage && (
       <figure class="image is-128x128 mb-4">
         <img class="is-rounded" src={profileImage} alt="Profile picture" />
       </figure>
-    )}
+    )} -->
     <figure class="image is-128x128 mb-4">
         <img class="is-rounded" src="/images/random.jpg" alt="Profile picture" />
     </figure>
